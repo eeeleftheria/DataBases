@@ -13,5 +13,5 @@ The second module of the project focuses on querying a relational movie database
 * `movie_has_director` (`movie_id`, `director_id`)
 
 ---
-!ER Diagram](ER.png)
+![ER Diagram](ER.png)
 
