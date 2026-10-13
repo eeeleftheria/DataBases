@@ -1,8 +1,4 @@
-# 🎬 Movie Star – Relational Database Design
-
-##  Overview
-
-**Movie Star** is a relational database schema designed for an interactive film-directing simulation game. The database manages game instances, directors, actors with dynamic skill profiles, AI-generated screenplays, sets across global locations, sponsors, and festival competitions.
+# Part 1: ER Diagram 
 
 ## Core Entity-Relationship Requirements & Design Constraints
 
