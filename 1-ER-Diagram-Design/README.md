@@ -2,26 +2,22 @@
 
 ## Core Entity-Relationship Requirements & Design Constraints
 
-### 1. Game State Persistence & Multi-Session Architecture
-* **Static vs. Dynamic Data:** Static baseline records (actor base entities, countries) remain immutable across all games, whereas session-specific attributes (skill ratings, awards, score leaderboards) update dynamically per active game instance.
-* **Director Scope:** Directors belong to a specific game instance and can establish self-referencing relationships with other directors (role models/admirers).
-
-### 2. Film Production & Set Allocation Rules
+### 1. Film Production & Set Allocation Rules
 * **Production Categorization:** Movies are categorized as either **Domestic** or **International**.
 * **Set Isolation & Location Sharing:** 
   * *Domestic movies* have a primary home country and can share filming sets with other domestic films in that country.
   * *International movies* can shoot across multiple countries, but their filming sets are strictly unshared and isolated.
 * **Production Quotas:** A director can manage at most **1 Domestic** and **1 International** film per active game instance.
 
-### 3. AI-Generated Screenplays
+### 2. AI-Generated Screenplays
 * **Recursive Script Tracing:** Screenplays are created by an AI engine and consist of sequential text segments. Each segment recursively references its preceding segment to maintain narrative flow.
 
-### 4. Dynamic Actor Skill System & Contracts
+### 3. Dynamic Actor Skill System & Contracts
 * **Attribute Normalization:** Actor traits are categorized into **Physical**, **Mental**, and **Technical** categories, with numerical quality scores assigned to each trait.
 * **Skill Evolution:** Technical skills dynamically upgrade when actors participate in training modules over specified time intervals.
 * **Multi-Movie Contracts:** Contracts link actors to movies with explicit start/end dates and annual compensation, allowing actors to hold overlapping contracts across multiple films.
 
-### 5. Festivals, Social Dynamics & Leaderboards
+### 4. Festivals, Social Dynamics & Leaderboards
 * **Competitions & Statistics:** Movies compete in international festivals, recording category performance statistics and earning ability points.
 * **Social Engagement:** Tracks friendships between directors on social network pages, as well as movie likes. Social popularity directly impacts director skill points, driving high-score rankings in the game's hall of fame ("Pantheon").
 
