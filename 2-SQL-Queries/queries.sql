@@ -2,7 +2,7 @@
 
 #1
 
-select m.titmle AS movie_title
+select m.title AS movie_title
 from movie m, actor a, genre g, role r, movie_has_genre mg
 where a.last_name = 'Allen' and g.genre_name = 'Comedy' and g.genre_id = mg.genre_id and m.movie_id = mg.movie_id and 
 	r.movie_id = m.movie_id and a.actor_id = r.actor_id
